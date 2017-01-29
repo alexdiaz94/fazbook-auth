@@ -32,3 +32,13 @@ function createUser(req, res) {
 }
 //this function will create the user based on criteria
 // and encrypt password
+function loginRequired(req, res, next) {
+  if (!req.user) return res.status(401).json({ status: 'Please log in' });
+  return next();
+}
+module.exports = {
+  comparePass,
+  loginRedirect,
+  loginRequired,
+  createUser
+}
