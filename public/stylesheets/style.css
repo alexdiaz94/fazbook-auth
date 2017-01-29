@@ -5,6 +5,7 @@ header {
 
 header .container h1 {
   font-size: 36px;
+  font-family: 'Righteous', cursive;
 }
 
 main{
@@ -13,8 +14,10 @@ main{
 
 footer {
   color: white;
+  font-family: 'Righteous', cursive;
 }
 
 a {
   color: #00B7FF;
 }
+
